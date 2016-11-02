@@ -200,7 +200,7 @@ func main() {
 	query := url.Values{}
 	query.Set("track", args.Track)
 
-	fmt.Println("Printing everything about data science:")
+	fmt.Println("Running...")
 	fmt.Printf("=========================================================\n")
 	if err = filterStream(client, "/1.1/statuses/filter.json", query); err != nil {
 		fmt.Println("Error: %v\n", err)
